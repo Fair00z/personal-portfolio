@@ -1,0 +1,30 @@
+
+<div id="hobbies" class="bg-theme-5">
+  <!-- -----------container-------------- -->
+  <div class="container">
+    <!-- -----------row-1--------------------- -->
+    <div class="row">
+      <div class="col-12 pt-5 pb-5">
+        <div class="bg-theme-3 rounded w-100 h-75 ps-5 pt-2 pb-1 display-flex">
+          <i class="fa-solid fa-guitar mt-2 me-2 text-white"></i>
+          <p class="about-text text-white w-100 h-100 mb-4">HOBBIES & INTERESTS</p>
+        </div>
+      </div>
+    </div>
+    <!-- -------------------row-2------------------------- -->
+    <div class="row">
+      {% for hobbie in hobbies %}
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="bg-theme-1 display-flex mx-auto rounded ps-2 w-100 mb-4 hobbie-tile">
+          <div class="w-25 text-center my-auto">
+            <i class="{{hobbie.icon_class_1}} {{hobbie.icon_class_2}}"></i>
+          </div>
+          <div class="w-75 my-auto border-hobbie ps-3">
+            <p class="my-3 font-weight">{{hobbie.hobbie_title}}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

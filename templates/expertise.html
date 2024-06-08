@@ -1,0 +1,36 @@
+<div id="expertise" class="bg-theme-5">
+  <div class="container">
+    <!-- --------row-1-------------- -->
+    <div class="row">
+      <div class="col-12 pt-5 pb-5">
+        <div class="bg-theme-3 rounded w-100 h-75 ps-5 pt-2 pb-1 display-flex">
+          <i class="fa-solid fa-list-check mt-2 me-2 text-white fs-5"></i>
+          <p class="about-text text-white w-100 h-100 mb-4">WORK EXPERTISE</p>
+        </div>
+      </div>
+    </div>
+    <!-- ---row-2-------------- -->
+    <div class="row">
+      {% for caption in captions %}
+      <div class="col-12">
+        <p class="text-center text-dark fs-6">{{caption.caption}}</p>
+      </div>
+      {% endfor %}
+    </div>
+    <!-- ---row-3--------- -->
+    <div class="row pb-3">
+      {% for expertise in expertises %}
+      <div class="col-12 col-md-6">
+        <div class="bg-theme-6 px-3 py-2 rounded-2 mb-4">
+          <div class="w-100 text-center text-white fs-5 fw-3">
+            <p>{{expertise.title}}</p>
+          </div>
+          <div class="progress bg-theme-5 mb-2" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-theme-6 text-dark fs-6 position-relative" style="width: {{expertise.percentage}}%;"><p class="text-center mt-3 position-absolute progress-rate color-5 start-50">{{expertise.percentage}}%</p></div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

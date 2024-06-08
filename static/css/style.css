@@ -1,0 +1,271 @@
+
+.logo{
+    width: 170px;
+}
+.off-logo{
+    width: 100px;
+}
+.bg-theme-1{
+    background-color: 
+    #141c27
+    /* #09101a */
+    /* #0f1722 */
+    /* #02050a */
+    /* #55e6a5 */
+    /* #09101a */
+    ;
+}
+.color-1{
+    color: 
+    #141c27
+    /* #09101a */
+    /* #0f1722 */
+    /* #02050a */
+    /* #55e6a5 */
+    /* #09101a */
+    ;
+}
+.color-2{
+    color: 
+    /* #141c27 */
+    #09101a
+    /* #0f1722 */
+    /* #02050a */
+    /* #55e6a5 */
+    /* #09101a */
+    ;
+}
+.color-3{
+    color: 
+    /* #141c27 */
+    /* #09101a */
+    #0f1722
+    /* #02050a */
+    /* #55e6a5 */
+    /* #09101a */
+    ;
+}
+.color-4{
+    color: 
+    /* #141c27 */
+    /* #09101a */
+    /* #0f1722 */
+    #02050a
+    /* #55e6a5 */
+    /* #09101a */
+    ;
+}
+.color-5{
+    color: 
+    /* #141c27 */
+    /* #09101a */
+    /* #0f1722 */
+    /* #02050a */
+    #55e6a5
+    /* #09101a */
+    ;
+}
+.color-6{
+    color: 
+    /* #141c27 */
+    /* #09101a */
+    /* #0f1722 */
+    /* #02050a */
+    /* #55e6a5 */
+    #09101a
+    ;
+}
+.bg-theme-2{
+    background-color: 
+    /* #141c27 */
+    #09101a
+    /* #0f1722 */
+    /* #02050a */
+    /* #55e6a5 */
+    /* #09101a */
+    ;
+}
+.bg-theme-3{
+    background-color: 
+    /* #141c27 */
+    /* #09101a */
+    #0f1722
+    /* #02050a */
+    /* #55e6a5 */
+    /* #09101a */
+    ;
+}
+.bg-theme-4{
+    background-color: 
+    /* #141c27 */
+    /* #09101a */
+    /* #0f1722 */
+    #02050a
+    /* #55e6a5 */
+    /* #09101a */
+    ;
+}
+.bg-theme-5{
+    background-color: 
+    /* #141c27 */
+    /* #09101a */
+    /* #0f1722 */
+    /* #02050a */
+    #55e6a5
+    /* #09101a */
+    ;
+}
+.bg-theme-6{
+    background-color: 
+    /* #141c27 */
+    /* #09101a */
+    /* #0f1722 */
+    /* #02050a */
+    /* #55e6a5 */
+    #09101a
+    ;
+}
+.nav-link{
+    color: red;
+    position: relative;
+}
+.nav-link::after{
+    content: "";
+    background-color: #55e6a5;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 2px;
+    bottom: 1px;
+    transition: width 0.3s;
+}
+.nav-link.active::after{
+    width: 90%;
+}
+.nav-link:hover::after{
+    width: 90%;
+}
+.btn-close{
+    font-size: 1.25rem;
+}
+.open-text{
+    margin-top: 16rem;
+}
+.open-img{
+    margin-top: 7rem;
+    width: 90%;
+}
+@keyframes come-from-left{
+    from {transform: translateX(-500px);}
+    to {transform: translateX(0);}
+}
+@keyframes come-from-right{
+    from {transform: translateX(500px);}
+    to {transform: translateX(0);}
+}
+.move-come-left{
+    animation-name: come-from-left;
+    animation-duration: 1s;
+}
+.move-come-right{
+    animation-name: come-from-right;
+    animation-duration: 1s;
+}
+.about-text{
+    font-size: 1.25rem;
+    font-weight: 900;
+}
+.about-content{
+    border: 1rem solid #09101a;
+    border-left: 0;
+    border-right: 0;
+}
+.font-weight{
+    font-weight: 900;
+}
+.font-weight-400{
+    font-weight: 400;
+}
+.display-flex{
+    display: flex;
+}
+.border-hobbie{
+    border: 1px solid #fff;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 0;
+}
+.w-hobbie{
+    width: 90%;
+}
+.hobbie-tile{
+    transition: transform 0.3s ,color 0.3s;
+    color: #fff;
+}
+.hobbie-tile:hover{
+    transform: scale(1.05);
+    color: #55e6a5;
+}
+.services-tile{
+    transition: transform 0.3s;
+}
+.services-tile:hover{
+    transform: translateY(-15px);
+}
+.progress-rate{
+    /* left: 15rem; */
+}
+.comments-profile{
+    width: 10%;
+    border: 2px solid #55e6a5;
+    height: 10%;
+}
+.border-theme-5{
+    border: 1px solid #55e6a5;
+}
+.btn-send{
+    background-color: #55e6a5;
+}
+.btn-send:hover{
+    background-color: #0f1722;
+    border: 1px solid #55e6a5;
+    color: #55e6a5;
+}
+.text-area-comment:focus{
+    outline:0;
+    border: 1px solid #55e6a5;
+}
+.name-inp{
+    outline: 0;
+    border: 1px solid rgb(125, 125, 125);
+
+}
+.name-inp:focus{
+    border: 1px solid #55e6a5;
+}
+.contact-tile{
+    border: 2px solid #141c27;
+}
+.contact-input{
+    border: 1px solid rgb(104, 104, 104);
+}
+.contact-input:focus{
+    outline: 0;
+    border: 1px solid rgb(255, 255, 255);
+}
+.btn-submit{
+    color: #fff;
+}
+.btn-submit:hover{
+    background-color: #02050a;
+    color: #55e6a5;
+}
+.icon-link{
+    transition: 0.3s;
+    text-decoration: none;
+    color: #fff;
+}
+.icon-link:hover{
+    color: #55e6a5;
+    transform: scale(1.1);
+}

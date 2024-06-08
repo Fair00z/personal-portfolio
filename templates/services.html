@@ -1,0 +1,25 @@
+
+<div id="services-page">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 pt-5 pb-5">
+        <div class="bg-theme-3 rounded w-100 h-75 ps-5 pt-2 pb-1 display-flex">
+          <i class="fa-solid fa-briefcase mt-2 me-2 text-white"></i>
+          <p class="about-text text-white w-100 h-100 mb-4">WHAT I DO</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      {% for service in services %}
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="w-100 bg-theme-1 rounded p-5 text-center color-5 services-tile mb-4">
+          <i class="{{service.icon_class_1}} {{service.icon_class_2}} color-5 display-3"></i>
+          <h3>{{service.title}}</h3>
+          <p class="font-weight text-white">{{service.description}}.</p>
+          <a class="btn bg-theme-5 font-weight" href='#contact-page'>Contact Me</a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="container">
+  <!-- ----row---------- -->
+    <div class="row">
+      <!-- ------col-1-------------- -->
+        <div class="col-md-6 text-white text-center">
+            <div class="open-text move-come-left">
+                <h2 class="font-weight-400">HELLO THERE,</h2>
+                <h1 class="font-weight-400">AM <span class="color-5 font-weight">FAIROOZ</span> HERE,</h1>
+                <h2 class="font-weight-400"><span class="color-5 font-weight">PYTHON</span> WEB DEVELOPER/UI.UX DESIGNER</h2>
+            </div>
+        </div>
+        <!-- -----------col-2--------- -->
+        {% for home in homes %}
+        <div class="col-md-6 text-center">
+            <img src="{{ home.banner.url }}" class="open-img move-come-right">
+        </div>
+        {% endfor %}
+    </div>
+</div>
